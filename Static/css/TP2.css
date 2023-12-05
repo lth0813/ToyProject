@@ -1,0 +1,50 @@
+.wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:1000px;
+    border:solid 1px black;
+    background-image: url("https://i.namu.wiki/i/K7DlVPkmx_d3q9YOfhDyh9htHusHGFES6ybucTocFVEe7-Klxr15vVGglOTvvruZdZlmWcB2z64f70tP-Y3Z36nHjU4qMvXMU0XY--dzjX86s87dqOHd7k11zXN5bOHvhzvpJNQhNYSwS9nfPwsilw.webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin:0 auto;
+}
+.screen {
+    border:solid 5px black;
+    background-color: rgba(128,128,128,0.7);
+    width:950px;
+    height:80vh;
+    margin:30px 30px 10px 30px;
+}
+.scrcon {
+    width:100%;
+    height:100%;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    padding-left: 20px;
+}
+.choice_wrapper {
+    display:none;
+    width: 950px;
+}
+.choice {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.choice div {
+    color:white;
+    font-size:30px;
+    font-weight: bold;
+    border:solid 5px black;
+    margin:10px 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:400px;
+    height:10vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}

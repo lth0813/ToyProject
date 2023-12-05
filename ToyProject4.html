@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Static/css/TP4.css">
+    <script src="./Static/js/TP4.js"></script>
+    <title>Slide Puzzle</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="add-desc">이미지 주소를 입력하세요. (이미지는 가급적 정사각형이 좋습니다)</div>
+            <div class="add-image">
+                주소 : <input class="name" onchange="getsrc()">
+            </div>
+            <div class="getsrc">
+                현재 주소 : <div class="printsrc"></div>
+            </div>
+            <div class="easteregg">주소창에 ./Static/images/yyr.png 혹은 ./Static/images/pjh.png를 입력해보세요</div>
+        <br>
+        <div class="container">
+            <div class="one">
+                <img class="firstimage" src="./Static/images/dog.jpg">
+            </div>
+            <div class="two">
+                <img class="secondimage" src="./Static/images/dog.jpg">
+            </div>
+            <div class="three">
+                <img class="thirdimage" src="./Static/images/dog.jpg">
+            </div>
+            <div class="four">
+                <img class="fourthimage" src="./Static/images/dog.jpg">
+            </div>
+            <div class="five">
+                <img class="fifthimage" src="./Static/images/dog.jpg">
+            </div>
+            <div class="six">
+                <img class="sixthimage" src="./Static/images/dog.jpg">
+            </div>
+            <div class="seven">
+                <img class="seventhimage" src="./Static/images/dog.jpg">
+            </div>
+            <div class="eight">
+                <img class="eighthimage" src="./Static/images/dog.jpg">
+            </div>
+            <div class="nine">
+                <img class="ninthimage" src="./Static/images/dog.jpg">
+            </div>
+        </div>
+        <div class="start">START</div>
+        <div class="reset">RESTART</div>
+        <div class="hintbtn">H I N T</div>
+        <div class="showhint"></div>
+        <div class="timer">
+            <div>TIME</div>
+            <div class="time">0</div>
+        </div>
+    </div>
+</body>
+</html>

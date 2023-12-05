@@ -1,0 +1,247 @@
+body {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.title div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: bold;
+    font-size:40px;
+    text-align: center;
+    height:100px;
+    width:100px;
+    border-radius: 50px;
+    border:1px solid azure;
+    background-image: linear-gradient(to right top,skyblue,azure,white);
+    margin-bottom:30px;
+}
+.wrapper {
+    width:600px;
+    border:3px solid skyblue;
+    border-radius: 20px;
+}
+.next {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid skyblue;
+    position: relative;
+    height:550px;
+}
+.result {
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 50px;
+    border:2px solid skyblue;
+    border-radius: 25px;
+    padding:10px;
+    background-color: white;
+    z-index: 3;
+    position: absolute;
+}
+.resultscr {
+    height:150px;
+    width:150px;
+    border-radius: 75px;
+    border:1px solid azure;
+    background-image: linear-gradient(to right,skyblue,azure,white);
+    color:red;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+}
+.resultscore {
+    border-bottom: 2px skyblue solid;
+}
+.restart div {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 30px;
+    border:2px solid skyblue;
+    border-radius: 15px;
+    margin:10px;
+    cursor: pointer;
+    padding:3px;
+}
+.now {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:600px;
+    height:150px;
+    position:relative;
+}
+.nextscr, .timer, .score {
+    display:flex;
+    flex-direction: column;
+}
+.nextscr {
+    display:none;
+    width:120px;
+    height:100px;
+    padding:5px;
+    border-bottom:2px solid skyblue;
+}
+.nextscr div, .timer div, .score div {
+    margin:0px;
+}
+.img {
+    height:70%;
+    width:70%;
+}
+.container {
+    z-index: 1;
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:2px solid skyblue;
+    border-radius: 10px;
+}
+.bigarrow {
+    display:none;
+    position:absolute;
+    right:80px;
+    bottom:20px;
+    z-index: 0;
+}
+.startbtn {
+    width:400px;
+    height:400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 90px;
+    border:1px solid azure;
+    background-image: linear-gradient(to right,skyblue,azure,white);
+    border-radius: 200px;
+    cursor: pointer;
+
+}
+.arrow {
+    height:50%;
+    width:100%;
+}
+.timer, .score {
+    width:120px;
+    height:80px;
+    margin:10px;
+    border:solid 2px skyblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 20px;
+}
+.tim, .sco {
+    border-bottom: 2px solid skyblue;
+}
+.five, .four, .three, .two, .one, .zero {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size:50px;
+    text-align: center;
+    height:100px;
+    width:100px;
+    border-radius: 50px;
+}
+.five {
+    height:20px;
+    width: 20px;
+    font-size:10px;
+}
+.four {
+    height:40px;
+    width: 40px;
+    font-size:20px;
+}
+.three {
+    height:60px;
+    width: 60px;
+    font-size:30px;
+}
+.two {
+    height:80px;
+    width: 80px;
+    font-size:40px;
+}
+#blue {
+    color:black;
+    border:1px solid azure;
+    background-image: linear-gradient(to right,blue,skyblue,white)
+}
+#green {
+    color:black;
+    border:1px solid lightgreen;
+    background-image: linear-gradient(to right,green,lightgreen,white);
+}
+#red {
+    color:black;
+    border:1px solid violet;
+    background-image: linear-gradient(to right,red,violet,white);
+}
+#yellow {
+    color:black;
+    border:1px solid lemonchiffon;
+    background-image: linear-gradient(to right,yellow,lemonchiffon,white);
+}
+.good {
+    position: absolute;
+    left:50px;
+    bottom:450px;
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:150px;
+    height:150px;
+    border:3px solid green;
+    border-radius: 75px;
+}
+.bad {
+    position: absolute;
+    left:50px;
+    bottom:250px;
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:150px;
+    height:150px;
+    border:3px solid red;
+    border-radius: 75px;
+}
+.ready {
+    z-index: 4;
+    width:400px;
+    height:400px;
+    border:1px solid azure;
+    background-image: linear-gradient(to right,skyblue,azure,white);
+    border-radius: 200px;
+    position: absolute;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size:100px;
+    display:none;
+    justify-content: center;
+    align-items: center;
+
+}
